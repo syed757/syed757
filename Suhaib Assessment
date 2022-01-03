@@ -1,0 +1,28 @@
+import random
+
+limit=int(input('enter limits: '))
+
+start=int(input('enter yesterday minimum value : '))
+stop=int(input('enter yesterday maximum value : '))
+
+select=random.randrange(start,stop)
+
+
+se=random.randint(9,9)
+print(se,"."+"15.AM")
+
+if select > limit:
+    print(select,"" + "same range of yesterday's" ,select**2)
+    print(se,"."+"30.AM")
+elif select==limit:
+    print("equal no changes")
+    print(se,"."+"30.AM")
+elif select < limit:
+    print(select ,"exceeds stop")
+    print(se,"."+"30.AM")
+    
+else :
+    print("nothing ")
+    
+se1=random.randint(3,3)
+print(se1,"."+"15.PM running now"
